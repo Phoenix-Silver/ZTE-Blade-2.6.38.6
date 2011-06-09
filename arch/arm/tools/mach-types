@@ -3324,3 +3324,12 @@ msm8960_mtp		MACH_MSM8960_MTP	MSM8960_MTP		3397
 msm8960_fluid		MACH_MSM8960_FLUID	MSM8960_FLUID		3398
 msm8960_apq		MACH_MSM8960_APQ	MSM8960_APQ		3399
 msm8960_liquid		MACH_MSM8960_LIQUID	MSM8960_LIQUID		3535
+raise	        	MACH_RAISE          	RAISE           	1009001
+mooncake	    	MACH_MOONCAKE       	MOONCAKE        	1009002
+joe             	MACH_JOE            	JOE             	1009003
+blade			MACH_BLADE		BLADE			1009004
+smooth	    		MACH_SMOOTH       	SMOOTH        		1009005
+r750       		MACH_R750        	R750                 	1009006
+v9       		MACH_V9        	V9                 	1009007
+amigo	    		MACH_AMIGO       	AMIGO        		1009009
+

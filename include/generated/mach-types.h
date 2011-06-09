@@ -3320,6 +3320,14 @@ extern unsigned int __machine_arch_type;
 #define MACH_TYPE_MSM8960_FLUID        3398
 #define MACH_TYPE_MSM8960_APQ          3399
 #define MACH_TYPE_MSM8960_LIQUID       3535
+#define MACH_TYPE_RAISE                1009001
+#define MACH_TYPE_MOONCAKE             1009002
+#define MACH_TYPE_JOE                  1009003
+#define MACH_TYPE_BLADE                1009004
+#define MACH_TYPE_SMOOTH               1009005
+#define MACH_TYPE_R750                 1009006
+#define MACH_TYPE_V9                   1009007
+#define MACH_TYPE_AMIGO                1009009
 
 #ifdef CONFIG_ARCH_EBSA110
 # ifdef machine_arch_type
@@ -43015,6 +43023,102 @@ extern unsigned int __machine_arch_type;
 # define machine_is_msm8960_liquid()	(machine_arch_type == MACH_TYPE_MSM8960_LIQUID)
 #else
 # define machine_is_msm8960_liquid()	(0)
+#endif
+
+#ifdef CONFIG_MACH_RAISE
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_RAISE
+# endif
+# define machine_is_raise()	(machine_arch_type == MACH_TYPE_RAISE)
+#else
+# define machine_is_raise()	(0)
+#endif
+
+#ifdef CONFIG_MACH_MOONCAKE
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_MOONCAKE
+# endif
+# define machine_is_mooncake()	(machine_arch_type == MACH_TYPE_MOONCAKE)
+#else
+# define machine_is_mooncake()	(0)
+#endif
+
+#ifdef CONFIG_MACH_JOE
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_JOE
+# endif
+# define machine_is_joe()	(machine_arch_type == MACH_TYPE_JOE)
+#else
+# define machine_is_joe()	(0)
+#endif
+
+#ifdef CONFIG_MACH_BLADE
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_BLADE
+# endif
+# define machine_is_blade()	(machine_arch_type == MACH_TYPE_BLADE)
+#else
+# define machine_is_blade()	(0)
+#endif
+
+#ifdef CONFIG_MACH_SMOOTH
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_SMOOTH
+# endif
+# define machine_is_smooth()	(machine_arch_type == MACH_TYPE_SMOOTH)
+#else
+# define machine_is_smooth()	(0)
+#endif
+
+#ifdef CONFIG_MACH_R750
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_R750
+# endif
+# define machine_is_r750()	(machine_arch_type == MACH_TYPE_R750)
+#else
+# define machine_is_r750()	(0)
+#endif
+
+#ifdef CONFIG_MACH_V9
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_V9
+# endif
+# define machine_is_v9()	(machine_arch_type == MACH_TYPE_V9)
+#else
+# define machine_is_v9()	(0)
+#endif
+
+#ifdef CONFIG_MACH_AMIGO
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_AMIGO
+# endif
+# define machine_is_amigo()	(machine_arch_type == MACH_TYPE_AMIGO)
+#else
+# define machine_is_amigo()	(0)
 #endif
 
 /*
