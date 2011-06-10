@@ -50,7 +50,7 @@
 #include <mach/msm_battery.h>
 #include <mach/rpc_server_handset.h>
 #include <mach/msm_tsif.h>
-#include <mach/socinfo.h>
+/*#include <mach/socinfo.h>*/
 
 #include <linux/mtd/nand.h>
 #include <linux/mtd/partitions.h>
@@ -83,7 +83,7 @@
 #define PMEM_KERNEL_EBI1_SIZE	0x1C000
 #endif
 
-static smem_global *global;
+/*static smem_global *global;*/
 static int g_zte_ftm_flag_fixup;
 
 
@@ -390,7 +390,7 @@ static int hsusb_rpc_connect(int connect)
 #endif /* CONFIG_USB_MSM_OTG_72K */
 
 #ifdef CONFIG_USB_MSM_OTG_72K
-struct vreg *vreg_3p3;
+static struct vreg *vreg_3p3;
 static int msm_hsusb_ldo_init(int init)
 {
 	if (init) {

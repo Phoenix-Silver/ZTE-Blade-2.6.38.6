@@ -227,4 +227,4 @@ obj-$(CONFIG_BT_MSM_PINTEST)  += btpintest.o
 obj-$(CONFIG_MSM_FAKE_BATTERY) += fish_battery.o
 obj-$(CONFIG_MSM_RPC_VIBRATOR) += msm_vibrator.o
 
-obj-$(CONFIG_MACH_BLADE) += board-zte-blade-keypad.o board-zte-blade.o devices-msm7x27.o gpiomux-7x27.o gpiomux-v1.o msm_vibrator.o
+obj-$(CONFIG_MACH_BLADE) += socinfo.o board-zte-blade-keypad.o board-zte-blade.o

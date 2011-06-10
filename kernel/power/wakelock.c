@@ -22,7 +22,7 @@
 #include <linux/proc_fs.h>
 #endif
 #include "power.h"
-#include <linux/moduleparam.h>
+//#include <linux/moduleparam.h>
 
 enum {
 	DEBUG_EXIT_SUSPEND = 1U << 0,
@@ -340,8 +340,8 @@ handle_out:
 	spin_unlock_irqrestore(&list_lock, irqflags);
 }
 #endif
-static int unknown_wakeup_timeout = 500;
-module_param_named(unknown_wakeup_timeout, unknown_wakeup_timeout, int, S_IRUGO | S_IWUSR | S_IWGRP)
+//static int unknown_wakeup_timeout = 500;
+//module_param_named(unknown_wakeup_timeout, unknown_wakeup_timeout, int, S_IRUGO | S_IWUSR | S_IWGRP)
 static void suspend(struct work_struct *work)
 {
 	int ret;
@@ -374,11 +374,7 @@ static void suspend(struct work_struct *work)
 	if (current_event_num == entry_event_num) {
 		if (debug_mask & DEBUG_SUSPEND)
 			pr_info("suspend: pm_suspend returned with no event\n");
-#if 0
-        wake_lock_timeout(&unknown_wakeup, HZ / 2);
-#else
-        wake_lock_timeout(&unknown_wakeup, msecs_to_jiffies(unknown_wakeup_timeout));
-#endif
+	  wake_lock_timeout(&unknown_wakeup, HZ / 2);
 	}
 }
 static DECLARE_WORK(suspend_work, suspend);

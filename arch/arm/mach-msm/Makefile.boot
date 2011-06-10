@@ -18,7 +18,7 @@ else
    zreladdr-$(CONFIG_ARCH_MSM7X27)	:= 0x02A08000
 params_phys-$(CONFIG_ARCH_MSM7X27)	:= 0x02A00100
 initrd_phys-$(CONFIG_ARCH_MSM7X27)	:= 0x0A000000
-
+endif
 # MSM7x27A
    zreladdr-$(CONFIG_ARCH_MSM7X27A)	:= 0x00208000
 params_phys-$(CONFIG_ARCH_MSM7X27A)	:= 0x00200100

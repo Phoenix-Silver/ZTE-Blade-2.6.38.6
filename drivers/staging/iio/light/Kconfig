@@ -24,3 +24,13 @@ config SENSORS_ISL29018
          in lux, proximity infrared sensing and normal infrared sensing.
          Data from sensor is accessible via sysfs.
 
+config SENSORS_TSL2771
+	tristate "TAOS TSL2771 proximity and ambient light sensor"
+	depends on I2C
+	help
+	 If you say yes here you get support for the Taos TSL277x,
+	 family of proximity and ambient light sensors.
+
+	 This driver can also be built as a module.  If so, the module
+	 will be called tsl2771.
+
