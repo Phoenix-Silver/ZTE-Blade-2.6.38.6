@@ -1,7 +1,7 @@
 /*
  * Automatically generated C config: don't edit
  * Linux/arm 2.6.38.6 Kernel Configuration
- * Fri Jun 10 12:50:04 2011
+ * Sat Jun 11 11:25:01 2011
  */
 /* ld script to make ARM Linux kernel
  * taken from the i386 version by Russell King
@@ -384,7 +384,7 @@ ENTRY(stext)
 jiffies = jiffies_64;
 SECTIONS
 {
- . = 0xC0000000 + 0x00008000;
+ . = 0x80000000 + 0x00008000;
  .init : { /* Init code and data		*/
   _stext = .;
   _sinittext = .;
