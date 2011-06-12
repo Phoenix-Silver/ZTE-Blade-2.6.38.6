@@ -53,7 +53,7 @@ include/linux/compile.h
 include/linux/version.h
 include/linux/utsrelease.h
 include/linux/bounds.h
-
+include/generated/*
 
 arch/arm/mach-msm/smd_rpc_sym.c
 drivers/char/consolemap_deftbl.c
@@ -79,8 +79,11 @@ scripts/mod/mk_elfconfig
 scripts/mod/modpost
 usr/gen_init_cpio
 usr/initramfs_data.cpio
-
-
+arch/arm/boot/Image
+arch/arm/boot/compressed/piggy.gzip
+arch/arm/boot/compressed/vmlinux
+arch/arm/boot/zImage
+arch/arm/kernel/vmlinux.lds
 
 
 # stgit generated dirs
